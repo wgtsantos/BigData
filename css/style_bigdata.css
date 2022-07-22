@@ -1,0 +1,36 @@
+html, body {
+  background: #EEE;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+	
+}
+
+#chartdiv {
+  width:100%;
+  height: 500px;
+}
+
+canvas {
+  position: absolute;
+}
+
+/*
+SOCIAL STYLES APPEAR BELOW.
+ALSO MUST REFERENCE THE JS URL IN THE JS PAN SETTINGS FOR THIS PAN TO WORK: https://codepen.io/UX-authority/pen/mPoOjg
+*/
+
+#social-container {
+  opacity: 0.9;
+	bottom: 5px;
+	right: 5px;
+}
+#social-container p{
+	padding-bottom: 0;
+	margin-bottom: 0;
+}
+#social-container #social-links a {
+	font-size: 2.8rem;
+}
+#social-message {
+	font-size: 1.15rem;
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title> Exemplo básico Web Big Data </title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+  <link rel="stylesheet" href="css/style_index.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<body ng-app="myApp">
+  <div ng-controller="myController">
+    <div class="container p-2">
+      <form action="result_bigdata.php" method="post" id="dados"> 
+		<div class="form-group">
+		   <div class="col-md-14 control-label">
+			 <h1 align="center"> Nuvem de Dados </h1>
+		  </div>
+		</div>
+        <div class="form-group">
+          <label> Digite ou cole seu texto aqui:</label>
+          <textarea class="form-control textarea-bounds" id="texto" name="texto" ng-model="comment" required></textarea>
+        </div>
+        <div class="form-group mb-3">
+          <div class="progress">
+            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuemax="100" ng-style="setProgressWidth()" ng-class="{'bg-warning':progressOver50(),'bg-danger':progressOver75()}">
+            </div>
+          </div>
+        </div>
+        <div class="form-group text-right">
+          <button type="submit" class="btn btn-primary" ng-disabled="validateComment()">
+            Enviar
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</body>
+<!-- partial -->
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.5/angular.min.js"></script>
+<script src="js/script_index.js"></script>
+
+</body>
+</html>

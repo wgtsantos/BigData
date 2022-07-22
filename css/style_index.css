@@ -1,0 +1,68 @@
+/* Cool infinite background scrolling animation.
+ * Twitter: @kootoopas
+ */
+/* Exo thin font from Google. */
+@import url(https://fonts.googleapis.com/css?family=Exo:100);
+/* Background data (Original source: https://subtlepatterns.com/grid-me/) */
+/* Animations */
+@-webkit-keyframes bg-scrolling-reverse {
+  100% {
+    background-position: 67px 100px;
+  }
+}
+@-moz-keyframes bg-scrolling-reverse {
+  100% {
+    background-position: 67px 100px;
+  }
+}
+@-o-keyframes bg-scrolling-reverse {
+  100% {
+    background-position: 67px 100px;
+  }
+}
+@keyframes bg-scrolling-reverse {
+  100% {
+    background-position: 67px 100px;
+  }
+}
+@-webkit-keyframes bg-scrolling {
+  0% {
+    background-position: 67px 100px;
+  }
+}
+@-moz-keyframes bg-scrolling {
+  0% {
+    background-position: 67px 100px;
+  }
+}
+@-o-keyframes bg-scrolling {
+  0% {
+    background-position: 67px 100px;
+  }
+}
+@keyframes bg-scrolling {
+  0% {
+    background-position: 67px 100px;
+  }
+}
+/* Main styles */
+body {
+  /* img size is 50x50 */
+  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEMAAABkCAMAAADqvX3PAAAAHlBMVEXz8/P09PTt7e3y8vLw8PDs7Ozu7u7v7+/x8fH19fUIg8NKAAACcElEQVR42u2XgW7rMAhFr8HB8P8/PFGH0mRz6qST3psUS1uVzD2+3IGNgXI4QOV4MFUsUnGZgSoiAlShprDn6xkGVgA1LgasNH+Y0JGTtJEoXpfl+ojJCmxGBzdKCwxPugpJdYQNGWlC5W1k1tVETBjqCBNES47v2qGOGTGgGcPe4Q0WNebZlsFVEjBkpBh6RIwnw9DChLeMXJOoqTOWbkJ/mmLkK+v2g4pKmnBCRzpAJKIZwzQDxSwZRBWRRvOMdLYxE9StScK0H4hyAK2eVu5/mGBkJvA2PxyDKR0J2OepQVtghgyzlz3BH5OR+MiTAQPwlUT5Tc01aTxgwFOzRgnaQe3HxC3DukrOai42vwcVoNh23zD/MRwyCtAk90Jo+HR2X0doB108GzImAfDZGaWZM5cZhdLJ64yM5EPGJU/xGzpuxs24GTfjv2f0A/M3dAg+Y5jfMCpfZpifhCJV2yK1v7GzDHinzIh7gOKsDmil7CaiMcQJBleShnGrN2bk3LQRO39I6oBh+7bkTdsC7Bi54qAjGnqdDBzeknJgZ42WApilDm5hwuTQRlSLAZ3h2FQ3HPbThU2dwXFBQKj1329xeLmEkiJaskmART2HCUQCzxzMEr7HswgReubwWYpZfJGAffs95y047kQrI2sz5mBE2t0QkhGYQW0O/qmDeuEmP1hjrwAWker5afv+1CxuLY5RjGJoQsoJ9u+EDsuVR6UHN0Ea2/YtRntQ3Gd9lVCgHsO26l378X7aKKx/ZoKd3tfBldy+FYDTZ0Nas0hjN92uMNATmjjc+9fnPvzjMgMoIHsQcPdBN+Nm3Iyb8ScYX5FtI8jjtU+MAAAAAElFTkSuQmCC") repeat 0 0;
+  -webkit-animation: bg-scrolling-reverse .92s infinite;
+  /* Safari 4+ */
+  -moz-animation: bg-scrolling-reverse .92s infinite;
+  /* Fx 5+ */
+  -o-animation: bg-scrolling-reverse .92s infinite;
+  /* Opera 12+ */
+  animation: bg-scrolling-reverse .92s infinite;
+  /* IE 10+ */
+  -webkit-animation-timing-function: linear;
+  -moz-animation-timing-function: linear;
+  -o-animation-timing-function: linear;
+  animation-timing-function: linear;
+}
+
+.textarea-bounds {
+  min-height: 600px;
+}
